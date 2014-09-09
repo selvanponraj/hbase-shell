@@ -1,7 +1,7 @@
 
 # hbase-shell
 
-Dockerized standalone HBase shell is based on Ubuntu 14.04, Oracle Java 7 and HBase Trunk(currently 0.99).
+[HBase shell container](https://registry.hub.docker.com/u/tobegit3hub/hbase-shell/) is based on Ubuntu 14.04, Oracle Java 7 and HBase trunk(currently 0.99).
 
 ## Usage
 
@@ -18,7 +18,7 @@ hbase(main):001:0> create "table1", {NAME => "cf1"}, {NAME => "cf2"}
 => Hbase::Table - table1
 </pre>
 
-* Check Schema
+* Check schema
 
 <pre>
 hbase(main):002:0> describe "table1"
