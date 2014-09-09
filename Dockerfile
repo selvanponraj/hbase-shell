@@ -36,7 +36,6 @@ EXPOSE 16020
 # RegionServer Web
 EXPOSE 16030
 
-# Run standalone HBase
-RUN bin/start-hbase.sh
+# Run standalone HBase and HBase shell
+CMD sh bin/start-hbase.sh && sleep 30 && bin/hbase shell
 
-CMD ["bin/hbase", "shell"]
